@@ -1,6 +1,7 @@
 import numpy as np
 import os
 import tensorflow as tf
+import nltk
 
 # data loading
 def load_corpus(filename):
@@ -17,7 +18,7 @@ def load_corpus(filename):
 
 # tokenisation
 def tokenize(input):
-    return input.split(' ')
+    return  input.split(' ')
 
 
 # preprocessing pipeline, used to load the data intro a structure required by the model
